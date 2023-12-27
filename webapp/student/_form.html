@@ -1,0 +1,44 @@
+<center>
+  <fieldset class="solid">
+    <legend>学生信息管理</legend>
+    <table>
+      <tr>
+        <td>
+          <input type="hidden" name="student.id" value="#(student.id??)" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <label>姓名</label>
+            <input type="text" name="student.name" value="#(student.name??)" />#(nameMsg)
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <label>年龄</label>
+            <input type="text" name="student.age" value="#(student.age??)"/>#(ageMsg)
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <label>年级</label>
+            <input type="text" name="student.grade" value="#(student.grade??)"/>#(gradeMsg)
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <label>&nbsp;</label>
+            <input value="提交" type="submit">
+          </div>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+</center>

@@ -1,0 +1,5 @@
+# config
+jdbcUrl = jdbc:mysql://localhost/test?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+user = root
+password = 20214063
+devMode = true

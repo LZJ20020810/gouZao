@@ -1,0 +1,44 @@
+#@layout()
+#define main()
+<center>
+  <h1>
+    <a href="/student/add">添加学生信息</a>
+  </h1>
+  <form action="/student/check" method="post">
+    <table>
+      <tr>
+        <td>
+          <input type="text" name="id" placeholder="请根据学生编号进行查询">
+          <input type="submit" value="查询">
+        </td>
+      </tr>
+    </table>
+  </form>
+</center>
+<div class="table_box">
+  <table class="list" border="1" align="center">
+    <tbody>
+    <tr>
+      <th width="4%">学号</th>
+      <th width="10%">姓名</th>
+      <th width="10%">年龄</th>
+      <th width="20%">年级</th>
+      <th width="12%">操作</th>
+    </tr>
+
+    #for(x : studentPage.getList())
+    <tr align="center">
+      <td width="4%">#(x.id)</td>
+      <td width="10%">#(x.name)</td>
+      <td width="10%">#(x.age)</td>
+      <td width="20%">#(x.grade)</td>
+      <td width="12%">
+        &nbsp;&nbsp;<a href="/student/delete/#(x.id)">删除</a>
+        &nbsp;&nbsp;<a href="/student/edit/#(x.id)">修改</a>
+      </td>
+    </tr>
+    #end
+    </tbody>
+  </table>
+</div>
+#end

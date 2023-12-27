@@ -1,0 +1,29 @@
+#@layout()
+#define main()
+<h1>学生详细信息
+</h1>
+
+<center>
+  <a href="/student">浏览全部信息</a>
+<div class="form_box">
+  <table>
+    <tr>
+      <td>学号：</td>
+      <td>#(student.id)</td>
+    </tr>
+    <tr>
+      <td>姓名：</td>
+      <td>#(student.name)</td>
+    </tr>
+    <tr>
+      <td>年龄：</td>
+      <td>#(student.age)</td>
+    </tr>
+    <tr>
+      <td>年级：</td>
+      <td>#(student.grade)</td>
+    </tr>
+  </table>
+</div>
+</center>
+#end
